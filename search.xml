@@ -8,10 +8,18 @@
       <url>/blog/2018/04/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</url>
       <content type="html"><![CDATA[<p>我今天用<strong>hexo</strong>搭建了自己的个人博客<br><strong>hexo</strong>的安装方式非常简单，在安装 <em>git</em>和<em>node.js</em>的前提下，<br>只需要下面的命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p><p>是不是非常简单？</p>]]></content>
       
+      <categories>
+          
+          <category> 初试牛刀 </category>
+          
+      </categories>
+      
       
         <tags>
             
             <tag> 第一篇 </tag>
+            
+            <tag> 博文 </tag>
             
         </tags>
       
