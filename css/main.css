@@ -1938,7 +1938,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0804ff;
+  background: #b32aff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3153,7 +3153,7 @@ body {
   -webkit-box-shadow: 0 0 10px #cac8c1;
   -moz-box-shadow: 0 0 10px #cac8c1;
 }
-.archive h2 {
+.posts-collapse h2 {
   color: #c67171;
   border-left: 3px solid #c67171;
   padding: 0;
