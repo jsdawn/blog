@@ -1938,7 +1938,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #38ffff;
+  background: #0804ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3149,6 +3149,15 @@ body {
   border-left: 5px solid #68228b;
   padding-left: 10px;
   padding-bottom: 5px;
+  box-shadow: 0 0 10px #cac8c1;
+  -webkit-box-shadow: 0 0 10px #cac8c1;
+  -moz-box-shadow: 0 0 10px #cac8c1;
+}
+.archive h2 {
+  color: #c67171;
+  border-left: 3px solid #c67171;
+  padding: 0;
+  padding-left: 10px;
   box-shadow: 0 0 10px #cac8c1;
   -webkit-box-shadow: 0 0 10px #cac8c1;
   -moz-box-shadow: 0 0 10px #cac8c1;
