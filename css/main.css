@@ -1652,6 +1652,111 @@ pre .javascript .function {
 .fancybox-close:hover {
   border: none;
 }
+#rewardButton {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  letter-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+}
+#rewardButton span {
+  display: inline-block;
+  padding: 0 18px;
+  line-height: 30px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  font-size: 16px;
+  font-family: "Microsoft Yahei";
+  background: #f44336;
+}
+#rewardButton span:hover {
+  background: #f7877f;
+}
+#QR {
+  padding-top: 20px;
+}
+#QR a {
+  border: 0;
+}
+#QR img {
+  width: 180px;
+  max-width: 100%;
+  display: inline-block;
+  margin: 0.8em 2em 0 2em;
+}
+@-moz-keyframes roll {
+  from {
+    -webkit-transform: rotateZ(30deg);
+    -moz-transform: rotateZ(30deg);
+    -ms-transform: rotateZ(30deg);
+    -o-transform: rotateZ(30deg);
+    transform: rotateZ(30deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-30deg);
+    -moz-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    -o-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+  }
+}
+@-webkit-keyframes roll {
+  from {
+    -webkit-transform: rotateZ(30deg);
+    -moz-transform: rotateZ(30deg);
+    -ms-transform: rotateZ(30deg);
+    -o-transform: rotateZ(30deg);
+    transform: rotateZ(30deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-30deg);
+    -moz-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    -o-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+  }
+}
+@-o-keyframes roll {
+  from {
+    -webkit-transform: rotateZ(30deg);
+    -moz-transform: rotateZ(30deg);
+    -ms-transform: rotateZ(30deg);
+    -o-transform: rotateZ(30deg);
+    transform: rotateZ(30deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-30deg);
+    -moz-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    -o-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+  }
+}
+@keyframes roll {
+  from {
+    -webkit-transform: rotateZ(30deg);
+    -moz-transform: rotateZ(30deg);
+    -ms-transform: rotateZ(30deg);
+    -o-transform: rotateZ(30deg);
+    transform: rotateZ(30deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-30deg);
+    -moz-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    -o-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+  }
+}
 .rtl.post-body p,
 .rtl.post-body a,
 .rtl.post-body h1,
@@ -1833,7 +1938,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #185412;
+  background: #a8a26e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3012,9 +3117,47 @@ code {
   -webkit-box-shadow: 0 0 5px #c7dde6;
   -moz-box-shadow: 0 0 5px #c7dde6;
 }
-.post {
-  margin-bottom: 60px;
-  padding: 20px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+body {
+  background: url("/blog/images/big6.jpg") no-repeat;
+/* 背景图垂直、水平均居中 */
+  background-position: center center;
+/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+  background-attachment: fixed;
+/* 让背景图基于容器大小伸缩 */
+  background-size: cover;
+/* 设置背景颜色，背景图加载过程中会显示背景色 */
+  background-color: #8e8a80;
+}
+.content-wrap,
+.sidebar-inner,
+.header-inner {
+  background-color: #dedbd3;
+}
+.sidebar {
+  background: rgba(222,219,211,0.6);
+}
+.tag-cloud-tags a {
+  font-size: 12px;
+  color: #363636 !important;
+}
+.posts-expand .post-title {
+  color: #b98102;
+}
+.content h2 {
+  color: #68228b;
+  font-size: 22px;
+  border-left: 5px solid #68228b;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  box-shadow: 0 0 10px #cac8c1;
+  -webkit-box-shadow: 0 0 10px #cac8c1;
+  -moz-box-shadow: 0 0 10px #cac8c1;
+}
+.content h3 {
+  color: #c67171;
+  border-left: 3px solid #c67171;
+  padding-left: 10px;
+  box-shadow: 0 0 10px #cac8c1;
+  -webkit-box-shadow: 0 0 10px #cac8c1;
+  -moz-box-shadow: 0 0 10px #cac8c1;
 }
