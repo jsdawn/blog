@@ -1938,7 +1938,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b32aff;
+  background: #d6ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3131,7 +3131,7 @@ body {
 .content-wrap,
 .sidebar-inner,
 .header-inner {
-  background-color: #dedbd3;
+  background-color: #faf7ef;
 }
 .sidebar {
   background: rgba(222,219,211,0.6);
