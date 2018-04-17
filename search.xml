@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>移动端回退刷新机制</title>
+      <link href="/blog/2018/04/17/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%9B%9E%E9%80%80%E5%88%B7%E6%96%B0%E6%9C%BA%E5%88%B6/"/>
+      <url>/blog/2018/04/17/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%9B%9E%E9%80%80%E5%88%B7%E6%96%B0%E6%9C%BA%E5%88%B6/</url>
+      <content type="html"><![CDATA[<p>移动端回退刷新机制，有两种方案：</p><h3 id="方案1：html-头部-meta"><a href="#方案1：html-头部-meta" class="headerlink" title="方案1：html 头部 meta"></a>方案1：html 头部 meta</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta http-equiv=<span class="string">"cache-control"</span> content=<span class="string">"no-cache"</span> /&gt;</span><br><span class="line">&lt;meta http-equiv=<span class="string">"expires"</span> content=<span class="string">"0"</span> /&gt;</span><br><span class="line">&lt;meta http-equiv=<span class="string">"expires"</span> content=<span class="string">"Tue, 01 Jan 1980 1:00:00 GMT"</span> /&gt;</span><br><span class="line">&lt;meta http-equiv=<span class="string">"pragma"</span> content=<span class="string">"no-cache"</span> /&gt;</span><br></pre></td></tr></table></figure><h3 id="方案2：js方式"><a href="#方案2：js方式" class="headerlink" title="方案2：js方式"></a>方案2：js方式</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">window.onpageshow = <span class="keyword">function</span>(event) &#123;</span><br><span class="line"><span class="keyword">if</span>(event.persisted) &#123;</span><br><span class="line">window.location.reload()</span><br><span class="line">&#125;</span><br><span class="line">&#125;;</span><br><span class="line">var SERVER_TIME = <span class="string">'$&#123;((SERVER_TIME!0)?long)?c&#125;'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(SERVER_TIME &amp;&amp; SERVER_TIME != <span class="string">'0'</span>) &#123;</span><br><span class="line">var LOCAL_TIME = sessionStorage &amp;&amp; sessionStorage[<span class="string">'LOCAL_TIME'</span> + <span class="string">'$&#123;pageName!&#125;'</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(LOCAL_TIME &amp;&amp; parseInt(LOCAL_TIME) &gt;= parseInt(SERVER_TIME)) &#123;</span><br><span class="line">window.location.reload();</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">sessionStorage[<span class="string">'LOCAL_TIME'</span> + <span class="string">'$&#123;pageName!&#125;'</span>] = SERVER_TIME;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      <categories>
+          
+          <category> Javascript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Javascript </tag>
+            
+            <tag> Html5 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>JS 解析url函数</title>
       <link href="/blog/2018/04/17/JS-%E8%A7%A3%E6%9E%90url%E5%87%BD%E6%95%B0/"/>
       <url>/blog/2018/04/17/JS-%E8%A7%A3%E6%9E%90url%E5%87%BD%E6%95%B0/</url>
