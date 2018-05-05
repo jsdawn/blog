@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>解决vue-cli中css背景图片路径错误问题</title>
+      <link href="/blog/2018/05/05/%E8%A7%A3%E5%86%B3vue-cli%E4%B8%ADcss%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/"/>
+      <url>/blog/2018/05/05/%E8%A7%A3%E5%86%B3vue-cli%E4%B8%ADcss%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/</url>
+      <content type="html"><![CDATA[<h4 id="首先看下错误信息"><a href="#首先看下错误信息" class="headerlink" title="首先看下错误信息"></a>首先看下错误信息</h4><p>在开发模式下调试背景图片完好显示，但是打包之后却报如下错误（不能找到如下资源）<br><code>GET http://loalhost:8080/static/css/static/img/bank-top.90f0c14.png net::ERR_FILE_NOT_FOUND</code><br>再看看我们打包后的文件dist，css目录下确实没有static文件,static文件其实是和我们的img文件在同一级目录。<br>从此看出原因是打包的css引入路径不正确。</p><h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><p>找到build/util.js文件中ExtractTextPlugin的css路径，手动添加publicPath参数</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (options.extract) &#123;</span><br><span class="line">     <span class="built_in">return</span> ExtractTextPlugin.extract(&#123;</span><br><span class="line">       use: loaders,</span><br><span class="line">       //这个路径根据打包后的static文件相对于css文件路径设置</span><br><span class="line">       publicPath: <span class="string">'../../'</span>,  </span><br><span class="line">       fallback: <span class="string">'vue-style-loader'</span></span><br><span class="line">     &#125;)</span><br><span class="line">   &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">     <span class="built_in">return</span> [<span class="string">'vue-style-loader'</span>].concat(loaders)</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure><p>重新build打包，背景图片就正常显示啦！</p>]]></content>
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+            <tag> Vue-cli </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Vue.js+vuex 移动端模板</title>
       <link href="/blog/2018/05/01/Vue-js-vuex-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%A8%A1%E6%9D%BF/"/>
       <url>/blog/2018/05/01/Vue-js-vuex-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%A8%A1%E6%9D%BF/</url>
