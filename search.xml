@@ -3,6 +3,31 @@
   
     
     <entry>
+      <title>基于vue的网易播放器ccPlayer</title>
+      <link href="/blog/2018/06/28/%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E7%BD%91%E6%98%93%E6%92%AD%E6%94%BE%E5%99%A8ccPlayer/"/>
+      <url>/blog/2018/06/28/%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E7%BD%91%E6%98%93%E6%92%AD%E6%94%BE%E5%99%A8ccPlayer/</url>
+      <content type="html"><![CDATA[<h4 id="致谢在先"><a href="#致谢在先" class="headerlink" title="致谢在先"></a>致谢在先</h4><p>本款ccPlayer的api由 <a href="https://binaryify.github.io/NeteaseCloudMusicApi" target="_blank" rel="noopener">网易云音乐 NodeJS 版 API</a>提供</p><p>ui图参考 <code>http://ustbhuangyi.com</code></p><p>感谢大佬 茂神 <code>maomao1996/Vue-mmPlayer</code> 请为他star</p><h4 id="技术栈如下："><a href="#技术栈如下：" class="headerlink" title="技术栈如下："></a>技术栈如下：</h4><ul><li style="list-style: none"><input type="checkbox" checked> <code>vue</code></li><li style="list-style: none"><input type="checkbox" checked> <code>vuex</code></li><li style="list-style: none"><input type="checkbox" checked> <code>axios</code></li><li style="list-style: none"><input type="checkbox" checked> <code>better-scroll</code></li></ul><h4 id="完成功能"><a href="#完成功能" class="headerlink" title="完成功能"></a>完成功能</h4><ul><li style="list-style: none"><input type="checkbox" checked> 推荐歌单</li><li style="list-style: none"><input type="checkbox" checked> mini播放</li><li style="list-style: none"><input type="checkbox" checked> 全屏播放</li><li style="list-style: none"><input type="checkbox" checked> 拖动播放</li><li style="list-style: none"><input type="checkbox" checked> 歌词</li></ul><h4 id="ccPlayer地址在这里"><a href="#ccPlayer地址在这里" class="headerlink" title="ccPlayer地址在这里"></a>ccPlayer地址在这里</h4><p><code>https://github.com/jsdawn/ccPlayer.git</code></p><h4 id="以下是播放器截图"><a href="#以下是播放器截图" class="headerlink" title="以下是播放器截图"></a>以下是播放器截图</h4><p><img src="/blog/img/ccplayer/cc3.png" alt="image"></p><p><img src="/blog/img/ccplayer/cc2.png" alt="image"></p><p><img src="/blog/img/ccplayer/cc1.png" alt="image"></p>]]></content>
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+            <tag> Vuex </tag>
+            
+            <tag> Vue-cli </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>解决vue-cli中css背景图片路径错误问题</title>
       <link href="/blog/2018/05/05/%E8%A7%A3%E5%86%B3vue-cli%E4%B8%ADcss%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/"/>
       <url>/blog/2018/05/05/%E8%A7%A3%E5%86%B3vue-cli%E4%B8%ADcss%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/</url>
